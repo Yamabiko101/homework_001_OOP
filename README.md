@@ -40,13 +40,5 @@ This project includes the following classes and functionalities:
    python main.py
    ```
 
-## Best Practices
-- **Consistency**: Maintain consistent naming conventions throughout the project (e.g., classes in CamelCase and methods in snake_case).
-- **Documentation**: Each class and method should be well-documented. This includes a brief description, parameters, return types, and exceptions raised.
-- **Version Control**: Regularly commit changes with meaningful commit messages to keep track of project evolution.
-- **Testing**: Implement unit tests to verify functionality and ensure code integrity. This can be done using frameworks like `unittest` or `pytest`.
-- **Code Review**: Engage in code reviews to improve code quality and share knowledge within the team.
-- **Refactoring**: Regularly revisit and refactor your code to improve readability, decrease duplication, and enhance performance.
-
 ## Conclusion
 This project serves as a practical guide to understanding and applying OOP principles. By following best practices outlined above, developers can maintain high-quality, scalable, and maintainable codebases.
