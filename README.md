@@ -146,7 +146,7 @@ Similar to Circle, but for rectangles.
 *   **Calculations**: Area and Perimeter.
 
 ## 👤 Author
-
+Yamabiko101
 **Repository**: [https://github.com/Yamabiko101/homework_001_OOP.git](https://github.com/Yamabiko101/homework_001_OOP.git)
 
 ---
