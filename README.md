@@ -1,154 +1,125 @@
-# 📚 Homework 001 - Object-Oriented Programming (OOP)
+# � Homework 001 - Object-Oriented Programming
 
-Welcome to **Homework 001**, a collection of practical exercises designed to strengthen fundamental concepts of Object-Oriented Programming (OOP) in Java. This repository contains clean and modular implementations of various classic software modeling problems.
+![Java](https://img.shields.io/badge/Java-17-orange.svg?style=flat-square)
+![Maven](https://img.shields.io/badge/Maven-3.8+-blue.svg?style=flat-square)
+![JUnit](https://img.shields.io/badge/JUnit-5-green.svg?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)
+
+Welcome to **Homework 001**, a comprehensive collection of Java exercises designed to master the fundamentals of **Object-Oriented Programming (OOP)**. This repository serves as a reference implementation for clean code, solid architecture, and robust testing practices.
+
+---
+
+## � Table of Contents
+- [Project Overview](#-project-overview)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Installation & Setup](#-installation--setup)
+- [Running Tests](#-running-tests)
+- [Modules Detail](#-modules-detail)
+- [Author](#-author)
+
+---
 
 ## 🚀 Project Overview
 
-This project is structured as a modular Maven application covering diverse domains, from basic geometry to business management and banking systems. Each exercise focuses on key principles such as:
-*   **Encapsulation**: Protecting the internal state of objects.
-*   **Validation**: Ensuring data integrity in constructors and setters.
-*   **Business Logic**: Implementing complex behaviors within classes.
-*   **Unit Testing**: Robust verification with JUnit 5.
+This modular application explores core software engineering concepts through practical examples. Each module isolates a specific domain problem to demonstrate:
+*   **Encapsulation & Data Hiding**: Ensuring valid state through strict access control.
+*   **Domain Modeling**: Mapping real-world concepts (Banks, Employees, Physics) to Java classes.
+*   **Test-Driven Verification**: comprehensive unit test coverage using JUnit 5.
 
-## 🛠️ Technology Stack
+## � Project Structure
 
-*   **Java 17**: Main development language.
-*   **Apache Maven**: Dependency management and build lifecycle.
-*   **JUnit 5**: Framework for unit testing.
+A high-level view of the repository layout:
+
+```text
+homework_01/
+├── src/
+│   ├── main/java/homework001/exercises/
+│   │   ├── account/      # Banking logic
+│   │   ├── ball/         # 2D Physics simulation
+│   │   ├── bookstore/    # Inventory management
+│   │   ├── circle/       # Geometry calculations
+│   │   ├── employee/     # HR & Salary systems
+│   │   └── rectangle/    # Geometry calculations
+│   └── test/java/        # JUnit Test Suites
+├── pom.xml               # Maven configuration
+└── README.md             # Project documentation
+```
 
 ## 📋 Prerequisites
 
-Ensure you have the following installed on your system:
-*   [Java JDK 17+](https://www.oracle.com/java/technologies/downloads/)
-*   [Maven](https://maven.apache.org/download.cgi)
-*   [Git](https://git-scm.com/downloads)
+Ensure your environment is ready:
+*   **Java JDK 17+**: [Download Here](https://www.oracle.com/java/technologies/downloads/)
+*   **Apache Maven**: [Download Here](https://maven.apache.org/download.cgi)
+*   **Git SCM**: [Download Here](https://git-scm.com/downloads)
 
 ## 🔧 Installation & Setup
 
-Follow these steps to set up the project on your local machine using the terminal:
-
-1.  **Clone the repository:**
-    Open your terminal or command prompt and run:
+1.  **Clone the Repository**
     ```bash
     git clone https://github.com/Yamabiko101/homework_001_OOP.git
+    cd homework_001_OOP/homework_01
     ```
 
-2.  **Navigate to the project directory:**
-    ```bash
-    cd homework_001_OOP
-    cd homework_01
-    ```
-
-3.  **Build the project:**
-    Compile the source code and download necessary dependencies:
+2.  **Build Project**
+    Downloads dependencies and compiles sources.
     ```bash
     mvn clean install
     ```
 
-## 📂 Project Navigation
-
-The project follows the standard Maven directory structure. Here is how to navigate through it:
-
-*   **Source Code**: Located in `src/main/java/homework001/exercises`. This is where the logic for all exercises resides.
-*   **Tests**: Located in `src/test/java/homework001/exercises`. This contains the JUnit test classes.
-*   **Project File**: The `pom.xml` file in the root directory manages dependencies and build configuration.
-
-To explore a specific module, for example, the `bookstore` exercise:
-Windows:
-```powershell
-cd src\main\java\homework001\exercises\bookstore
-```
-Linux/Mac:
-```bash
-cd src/main/java/homework001/exercises/bookstore
-```
-*(Use `cd ..` to go back up one directory level)*
-
 ## 🧪 Running Tests
 
-You can run tests for the entire project or for specific modules individually.
+Execute tests to verify the integrity of the code. You can run the entire suite or target specific modules.
 
-### Run All Tests
-To executing all tests in the project at once:
+### 🟢 Run All Tests
 ```bash
 mvn test
 ```
 
-### Run Specific Tests
-To run tests for a specific exercise, use the following commands from the `homework_01` root directory:
+### 🎯 Run Specific Modules
 
-#### 1. 🏦 Account (Banking System)
-Verify the banking logic (credits, debits, balances):
-```bash
-mvn -Dtest=AccountTest test
-```
+| Module | Command | Description |
+| :--- | :--- | :--- |
+| **Account** | `mvn -Dtest=AccountTest test` | Verifies credit/debit logic and balance validation. |
+| **Ball** | `mvn -Dtest=BallTest test` | Tests movement vectors and boundary reflections. |
+| **Bookstore** | `mvn -Dtest=BookTest test` | Checks book data integrity and author associations. |
+| **Circle** | `mvn -Dtest=CircleTest test` | Validates radius constraints and area formulas. |
+| **Employee** | `mvn -Dtest=EmployeeTest test` | Tests salary raises and annual income calculations. |
+| **Rectangle** | `mvn -Dtest=RectangleTest test` | Verifies perimeter and area logic. |
 
-#### 2. ⚽ Ball (Physics Simulation)
-Test the movement and reflection logic of the ball:
-```bash
-mvn -Dtest=BallTest test
-```
+## 📦 Modules Detail
 
-#### 3. � Bookstore (Inventory System)
-Check the Book and Author classes:
-```bash
-mvn -Dtest=BookTest test
-```
+### 🏦 Account
+*Implements a robust banking account model.*
+- **Features**: Thread-safe-ready balance operations.
+- **Validation**: Prevents overdrafts and invalid transaction amounts.
 
-#### 4. ⭕ Circle (Geometry)
-Verify circle geometry calculations:
-```bash
-mvn -Dtest=CircleTest test
-```
+### ⚽ Ball
+*A simple 2D physics simulation.*
+- **Features**: Position (x, y) and velocity (dx, dy) tracking.
+- **Logic**: Implements `move()` methods and collision reflection protocols.
 
-#### 5. 💼 Employee (HR System)
-Test employee salary calculations and raises:
-```bash
-mvn -Dtest=EmployeeTest test
-```
+### 📚 Bookstore
+*Domain model for a retail book system.*
+- **Components**: `Book` and `Author`.
+- **Logic**: Enforces mandatory fields (ISBN, Price, Author details) to prevent invalid object states.
 
-#### 6. ▭ Rectangle (Geometry)
-Verify rectangle area and perimeter calculations:
-```bash
-mvn -Dtest=RectangleTest test
-```
+### 💼 Employee
+*Human Resources logic for compensation.*
+- **Features**: Uses `BigDecimal` for financial precision.
+- **Logic**: Calculates annual salary and applies percentage-based raises safely.
 
-## 🧩 Modules Description
-
-### 1. Account
-Models a simple bank account.
-*   **Key Features**: Balance management, credit/debit operations with validation.
-*   **Key Methods**: `credit(amount)`, `debit(amount)`, `getBalance()`.
-
-### 2. Ball
-Represents a ball moving in a 2D space.
-*   **Key Features**: Mutable state (x, y position), velocity (delta), bouncing, and boundary checks.
-*   **Functionality**: Simulates movement steps and wall reflections.
-
-### 3. Bookstore
-A system composed of `Book` and `Author` classes.
-*   **Key Features**: Object association (a Book *has* an Author).
-*   **Details**: Validates input data like price, quantity, and author details.
-
-### 4. Circle
-Utility class for circle calculations.
-*   **Key Features**: Constructor overloading, constant usage (`DEFAULT_RADIUS`).
-*   **Calculations**: Area and Circumference.
-
-### 5. Employee
-Models an employee with salary calculation capabilities.
-*   **Key Features**: Precise financial calculations (using `BigDecimal`), percentage-based salary raises.
-*   **Key Methods**: `getAnnualSalary()`, `raiseSalary(percent)`.
-
-### 6. Rectangle
-Similar to Circle, but for rectangles.
-*   **Key Features**: Dimension validation (length and width must be positive).
-*   **Calculations**: Area and Perimeter.
-
-## 👤 Author
-Yamabiko101
-**Repository**: [https://github.com/Yamabiko101/homework_001_OOP.git](https://github.com/Yamabiko101/homework_001_OOP.git)
+### 📐 Geometry (Circle & Rectangle)
+*Mathematical utility classes.*
+- **Features**: Immutable-style dimension handling.
+- **Logic**: Provides standard geometric formulas with input validation (e.g., non-negative dimensions).
 
 ---
-*Made with ☕ and Java.*
+
+## 👤 Author
+
+**Maintainer**: [Yamabiko101](https://github.com/Yamabiko101)
+
+---
+
 
