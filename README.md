@@ -119,7 +119,7 @@ mvn test
 ## 👤 Author
 
 **Maintainer**: [Yamabiko101](https://github.com/Yamabiko101)
-
+![Separator]([https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXdlZ3lob2N1dnA2OHE1b3R0M2J3bHA1aGllMnVzNWltYmx1bWlzbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yMHyX4TbUD6vXh6AJ9/giphy.gif))
 ---
 
 
