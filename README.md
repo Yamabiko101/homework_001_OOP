@@ -27,7 +27,7 @@ This modular application explores core software engineering concepts through pra
 *   **Domain Modeling**: Mapping real-world concepts (Banks, Employees, Physics) to Java classes.
 *   **Test-Driven Verification**: comprehensive unit test coverage using JUnit 5.
 
-## � Project Structure
+##  Project Structure
 
 A high-level view of the repository layout:
 
