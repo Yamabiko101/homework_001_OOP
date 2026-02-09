@@ -1,4 +1,4 @@
-# � Homework 001 - Object-Oriented Programming
+#  Homework 001 - Object-Oriented Programming
 
 ![Java](https://img.shields.io/badge/Java-17-orange.svg?style=flat-square)
 ![Maven](https://img.shields.io/badge/Maven-3.8+-blue.svg?style=flat-square)
@@ -9,7 +9,7 @@ Welcome to **Homework 001**, a comprehensive collection of Java exercises design
 
 ---
 
-## � Table of Contents
+##  Table of Contents
 - [Project Overview](#-project-overview)
 - [Project Structure](#-project-structure)
 - [Prerequisites](#-prerequisites)
